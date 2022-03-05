@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+html, body, div, section, article, aside, header, footer, nav, h1, h2, h3, h4, h5, h6, p, em, strong, img, ol, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background: #E8E8E8; /* changes colour of background of page */
+}
+
+header {
+	padding: 60px; /* spacing around the text */
+	text-align: center;
+	background: #911791; /* changes colour of background of header */
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif; /* defines font */
+	font-size: 16px; /* defines font size */
+	margin: 0 auto; 
+	background: #E8E8E8; /* defines background colour */
+}
+
+h1 {
+	color: #E8E8E8; /* defines colour of text */
+	font-size: 3em;
+}
+
+h2 {
+	color: #1F8EC5;
+	font-size: 1.9em;
+}
+
+h3 {
+	color: #0A4B54;
+	font-size: 1.7em;
+}
+
+p {
+	color: #222425;
+}
+
+.navbar {
+	background: #0ad8b6;
+	display: flex; /* allows navbar to change display based on screen size */
+	align-items: center; 
+	padding: 20px;
+}
+
+nav ul, li {
+	display: inline-block;
+	margin-right: 20px;
+	padding:0;
+}
+
+p {
+	color: #555; 
+}
+
+.image {
+	width: 100%; /* defines width of each image */
+	padding: 20px; /* defines space around image */
+	
+}
+
+.main {
+	flex: 70%;
+	padding: 20px;
+}
+
+@media only screen and (max-width:800px) { /* changes how text and images are displayed based on screen size */
+	.main, .image {
+		flex-direction: column; /* flexes to fit onto screen */
+	}
+}
+
+footer {
+	padding: 1cm;
+	font-size: 0.8em;
+	line-height: 0.5em;
+	color: #E8E8E8;
+	background: black;
+}
